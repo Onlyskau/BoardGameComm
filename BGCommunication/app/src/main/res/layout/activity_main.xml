@@ -7,6 +7,42 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="@drawable/gradiantcolor">
 
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Create"
+        android:id="@+id/btn_create"
+        android:background="#ffffff"
+        android:elegantTextHeight="false"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/btn_load"
+        android:layout_alignStart="@+id/btn_load"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="100dp"
+        android:clickable="true"
+        android:onClick="createPressed" />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Load"
+        android:id="@+id/btn_load"
+        android:background="#ffffff"
+        android:layout_below="@+id/btn_create"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp" />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Help"
+        android:id="@+id/btn_help"
+        android:background="#ffffff"
+        android:layout_below="@+id/btn_load"
+        android:layout_alignLeft="@+id/btn_load"
+        android:layout_alignStart="@+id/btn_load"
+        android:layout_marginBottom="30dp" />
 </RelativeLayout>
